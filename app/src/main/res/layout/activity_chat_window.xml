@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backcsn"
+    tools:context=".chat_window">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:id="@+id/ll1"
+        android:gravity="center">
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:id="@+id/pchat"
+            android:layout_width="@dimen/_80sdp"
+            android:layout_height="@dimen/_80sdp"
+            android:src="@drawable/camera"
+            app:civ_border_color="@color/white"
+            android:layout_marginTop="@dimen/_7sdp"
+            app:civ_border_width="@dimen/_2sdp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.226" />
+
+        <TextView
+            android:id="@+id/rnameee"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="TeamSync"
+            android:gravity="center"
+            android:textColor="@color/white"
+            android:fontFamily="@font/poppins_regular"
+            android:textSize="@dimen/_15sdp"
+            android:layout_margin="@dimen/_10sdp"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/msgadpter"
+        android:layout_width="match_parent"
+        android:layout_height="502dp"
+        android:layout_above="@id/ll2"
+        android:layout_below="@+id/ll1"
+        android:layout_marginTop="7dp"
+        android:layout_marginBottom="-7dp"
+        android:padding="@dimen/_10sdp" />
+
+    <LinearLayout
+        android:id="@+id/ll2"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_45sdp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="@dimen/_2sdp"
+        android:layout_marginTop="@dimen/_2sdp"
+        android:layout_marginEnd="@dimen/_2sdp"
+        android:layout_marginBottom="@dimen/_2sdp"
+        android:orientation="horizontal">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginStart="@dimen/_4sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_7sdp"
+            android:layout_weight="1"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_25sdp">
+
+            <EditText
+                android:id="@+id/mtext"
+                android:layout_width="338dp"
+                android:layout_height="55dp"
+                android:layout_marginLeft="@dimen/_20sdp"
+                android:layout_gravity="center"
+                android:textColor="#040000"
+                android:background="@null"
+                android:fontFamily="@font/poppins_regular"
+                android:hint="Type The Messages..."
+                android:paddingStart="13.00dp" />
+
+        </androidx.cardview.widget.CardView>
+
+        <androidx.cardview.widget.CardView
+            android:id="@+id/msendbtn"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            android:layout_marginTop="@dimen/_5sdp"
+            android:layout_marginEnd="@dimen/_5sdp"
+            app:cardBackgroundColor="@color/white"
+            app:cardCornerRadius="@dimen/_25sdp">
+
+            <ImageView
+                android:layout_width="@dimen/_15sdp"
+                android:layout_height="@dimen/_15sdp"
+                android:layout_gravity="center"
+                android:background="@drawable/sendbut" />
+
+        </androidx.cardview.widget.CardView>
+
+
+    </LinearLayout>
+
+</RelativeLayout>
+
+    <!--<?xml version="1.0" encoding="utf-8"?>-->
+<!--&lt;!&ndash;<RelativeLayout &ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_width="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;    android:layout_height="match_parent"&ndash;&gt;-->
+<!--&lt;!&ndash;   &ndash;&gt;-->
+<!--&lt;!&ndash;    android:background="@drawable/backcsn">&ndash;&gt;-->
+
+<!--    <LinearLayout-->
+<!--        xmlns:android="http://schemas.android.com/apk/res/android"-->
+<!--        xmlns:app="http://schemas.android.com/apk/res-auto"-->
+<!--        xmlns:tools="http://schemas.android.com/tools"-->
+<!--        android:background="@drawable/backcsn"-->
+<!--        tools:context=".chat_window"-->
+<!--        android:id="@+id/csll"-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="match_parent"-->
+<!--        android:gravity="center"-->
+<!--        android:orientation="vertical"-->
+<!--        android:padding="10dp">-->
+
+<!--        <de.hdodenhof.circleimageview.CircleImageView-->
+<!--            android:id="@+id/pchat"-->
+<!--            android:layout_width="153dp"-->
+<!--            android:layout_height="150dp"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:src="@drawable/photoicon"-->
+<!--            app:layout_constraintBottom_toBottomOf="parent"-->
+<!--            app:layout_constraintEnd_toEndOf="parent"-->
+<!--            app:layout_constraintStart_toStartOf="parent"-->
+<!--            app:layout_constraintTop_toTopOf="parent"-->
+<!--            app:layout_constraintVertical_bias="0.388" />-->
+
+<!--        <TextView-->
+<!--            android:id="@+id/rnameee"-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="60dp"-->
+<!--            android:layout_marginStart="0dp"-->
+<!--            android:layout_marginTop="0dp"-->
+<!--            android:layout_marginEnd="0dp"-->
+<!--            android:layout_marginBottom="0dp"-->
+<!--            android:background="@drawable/button_design_round"-->
+<!--            android:gravity="center"-->
+<!--            android:text=""-->
+<!--            android:textColor="#000000"-->
+<!--            android:textSize="30sp" />-->
+
+<!--        <androidx.recyclerview.widget.RecyclerView-->
+<!--            android:id="@+id/mchat"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="500dp"-->
+<!--            android:padding="10dp"/>-->
+<!--        <LinearLayout-->
+<!--            android:id="@+id/sendll"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="100dp"-->
+<!--            android:gravity="center"-->
+<!--            android:orientation="hori">-->
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_width="0dp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_height="@dimen/_50sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginStart="@dimen/_4sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginTop="@dimen/_5sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_marginEnd="@dimen/_7sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;                android:layout_weight="1"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardBackgroundColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardCornerRadius="@dimen/_25sdp">&ndash;&gt;-->
+
+<!--            &lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+<!--&lt;!&ndash;            <androidx.cardview.widget.CardView&ndash;&gt;-->
+
+<!--&lt;!&ndash;                app:cardBackgroundColor="@color/white"&ndash;&gt;-->
+<!--&lt;!&ndash;                app:cardCornerRadius="@dimen/_25sdp">&ndash;&gt;-->
+
+<!--            <EditText-->
+<!--                android:id="@+id/textmsg"-->
+<!--                android:layout_width="300dp"-->
+<!--                android:layout_height="50dp"-->
+<!--                android:layout_gravity="center"-->
+<!--                android:layout_marginStart="@dimen/_20sdp"-->
+<!--                android:background="@drawable/button_design_round"-->
+<!--                android:fontFamily="@font/poppins_regular"-->
+<!--                android:hint="Type The Messages..."-->
+<!--                android:inputType="String"-->
+<!--                android:padding="13.00dp" />-->
+
+<!--            <ImageView-->
+<!--                    android:layout_width="50dp"-->
+<!--                    android:layout_height="50dp"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:background="@drawable/sendbut"-->
+<!--                    android:id="@+id/sendbtnn"-->
+<!--                android:layout_marginStart="@dimen/_20sdp"-->
+<!--                    android:layout_marginTop="@dimen/_5sdp"-->
+<!--                    android:layout_marginEnd="@dimen/_5sdp"-->
+<!--                     />-->
+
+<!--&lt;!&ndash;            </androidx.cardview.widget.CardView>&ndash;&gt;-->
+<!--        </LinearLayout>-->
+<!--    </LinearLayout>-->
+
+
+<!--&lt;!&ndash;</RelativeLayout>&ndash;&gt;-->

@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/layback"
+    tools:context=".Chat_page">
+
+<!--    <LinearLayout-->
+<!--        android:id="@+id/toolBar"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_marginStart="50dp"-->
+<!--        android:layout_marginTop="10dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:background="#5B8BDF"-->
+<!--        android:gravity="right"-->
+
+<!--        tools:ignore="RtlHardcoded"-->
+<!--        android:orientation="horizontal">-->
+
+<!--                <TextView-->
+<!--                    android:layout_width="0dp"-->
+<!--                    android:layout_height="wrap_content"-->
+<!--                    android:layout_gravity="center"-->
+<!--                    android:layout_marginStart="@dimen/_10sdp"-->
+<!--                    android:layout_weight="1"-->
+
+<!--                    android:text="\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\t\log out"-->
+<!--                    android:textColor="#2a364e"-->
+<!--                    android:textSize="20sp"-->
+<!--                    android:layout_marginLeft="@dimen/_10sdp" />-->
+<!--&lt;!&ndash;        <ImageView&ndash;&gt;-->
+<!--&lt;!&ndash;            android:id="@+id/logoutimg"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_width="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_height="50dp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_gravity="right"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:layout_marginRight="@dimen/_10sdp"&ndash;&gt;-->
+<!--&lt;!&ndash;            android:background="@drawable/logout_image" />&ndash;&gt;-->
+
+
+<!--    </LinearLayout>-->
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/mainUserRecyclerView"
+        android:layout_width="376dp"
+        android:layout_height="700dp"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="50dp" />
+
+<!--    <ImageView-->
+<!--        android:id="@+id/camBut"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="240dp"-->
+<!--        android:layout_marginTop="780dp"-->
+<!--        android:layout_marginEnd="276dp"-->
+<!--        android:layout_marginBottom="276dp"-->
+<!--        android:src="@drawable/camera" />-->
+
+<!--    <ImageView-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="80dp"-->
+<!--        android:layout_marginTop="780dp"-->
+<!--        android:layout_marginEnd="0dp"-->
+<!--        android:layout_marginBottom="276dp"-->
+<!--        android:src="@drawable/chat" />-->
+
+<!--    <ImageView-->
+<!--        android:id="@+id/settingBut"-->
+<!--        android:layout_width="50dp"-->
+<!--        android:layout_height="50dp"-->
+<!--        android:layout_marginStart="160dp"-->
+<!--        android:layout_marginTop="780dp"-->
+<!--        android:layout_marginEnd="276dp"-->
+<!--        android:layout_marginBottom="276dp"-->
+<!--        android:src="@drawable/setting_icon" />-->
+
+
+
+</RelativeLayout>
